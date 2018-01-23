@@ -33,6 +33,13 @@ let dinosaur2;
     assert.strictEqual(park.numDinos(), 1);
   })
 
+  it('can remove dinos by type', function() {
+    park.addDino(dinosaur1);
+    park.addDino(dinosaur2);
+    park.removeDinoByType('Concavenator');
+    assert.strictEqual(park.enclosure.length, 1);
+  })
+
 
 
 
